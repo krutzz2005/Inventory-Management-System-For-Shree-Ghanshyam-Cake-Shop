@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3333F5A-19E8-4D95-A69C-757A7DA7C6A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>welcome</RootNamespace>
+    <AssemblyName>welcome</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abouts_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abouts_us.Designer.cs">
+      <DependentUpon>abouts_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bill1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill1.Designer.cs">
+      <DependentUpon>bill1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change-pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change-pass.Designer.cs">
+      <DependentUpon>change-pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_ayushi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_ayushi.Designer.cs">
+      <DependentUpon>contact_ayushi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_devangi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_devangi.Designer.cs">
+      <DependentUpon>contact_devangi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_us.Designer.cs">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_kruti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_kruti.Designer.cs">
+      <DependentUpon>contact_kruti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer-report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer-report.Designer.cs">
+      <DependentUpon>customer-report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_master.Designer.cs">
+      <DependentUpon>customer_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item_master.Designer.cs">
+      <DependentUpon>item_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item_report.Designer.cs">
+      <DependentUpon>item_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi.Designer.cs">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order-report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order-report.Designer.cs">
+      <DependentUpon>order-report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_master.Designer.cs">
+      <DependentUpon>order_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="project.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sales-master1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales-master1.Designer.cs">
+      <DependentUpon>sales-master1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sales-report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales-report.Designer.cs">
+      <DependentUpon>sales-report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash1.Designer.cs">
+      <DependentUpon>splash1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock-report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock-report.Designer.cs">
+      <DependentUpon>stock-report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_master.Designer.cs">
+      <DependentUpon>stock_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="success.Designer.cs">
+      <DependentUpon>success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="abouts_us.resx">
+      <DependentUpon>abouts_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bill1.resx">
+      <DependentUpon>bill1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change-pass.resx">
+      <DependentUpon>change-pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_ayushi.resx">
+      <DependentUpon>contact_ayushi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_devangi.resx">
+      <DependentUpon>contact_devangi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_kruti.resx">
+      <DependentUpon>contact_kruti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_us.resx">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer-report.resx">
+      <DependentUpon>customer-report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_master.resx">
+      <DependentUpon>customer_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_master.resx">
+      <DependentUpon>item_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_report.resx">
+      <DependentUpon>item_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi.resx">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order-report.resx">
+      <DependentUpon>order-report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_master.resx">
+      <DependentUpon>order_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales-master1.resx">
+      <DependentUpon>sales-master1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales-report.resx">
+      <DependentUpon>sales-report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash1.resx">
+      <DependentUpon>splash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock-report.resx">
+      <DependentUpon>stock-report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_master.resx">
+      <DependentUpon>stock_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="success.resx">
+      <DependentUpon>success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wel1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\we.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c22.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-delicious-cake-arrangement_23-2148933608.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rrtrr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-delicious-cake-arrangement_23-21489336081.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-user-profile-5b383c44697cb0.6228623815304121004321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-password-computer-icons-security-safety-icon-safety-icon-child-safety-lock-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wel3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shree Ghanshyam live cake shop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shree Ghanshyam live cake shop1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c221.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c222.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c223.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c224.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c225.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c226.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d..jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c227.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c228.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c229.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shree Ghanshyam live cake shop2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shree Ghanshyam live cake shop3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastericon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c2210.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ab1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abouts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c2211.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-delicious-cake-arrangement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pro_wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overloaded-cake-with-pink-background6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ab2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cus_repo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-repoprt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-repoprt11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Crystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
